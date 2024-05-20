@@ -26,21 +26,15 @@ struct ContentView: View {
                     }, label: {
                         Image (systemName: "rectangle.stack.badge.minus.fill")
                     })
-                    .imageScale(/*@START_MENU_TOKEN@*/.medium/*@END_MENU_TOKEN@*/)
-                    .font(.largeTitle)
-            
                 Spacer()
-                
                     Button(action: {
                         cardCount += 1
                     }, label: {
                         Image (systemName: "rectangle.stack.badge.plus.fill")
                     })
-                    .imageScale(/*@START_MENU_TOKEN@*/.medium/*@END_MENU_TOKEN@*/)
-                    .font(.largeTitle)
-                
             }
-            
+            .imageScale(/*@START_MENU_TOKEN@*/.medium/*@END_MENU_TOKEN@*/)
+            .font(.largeTitle)
         }
         .padding(20)
         
