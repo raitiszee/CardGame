@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    let emojis: [String] = ["👻", "🎃", "🕷️", "😈"] //can be shoretened to let emojis = ["", "", ""]
+    let emojis = ["👻", "🎃", "🕷️", "😈", "💀", "🕸️", "🥅", "🎤", "🎸", "📀", "🏒", "🗽"] //can be shoretened to let emojis = ["", "", ""]
     
     var body: some View {
         HStack {
