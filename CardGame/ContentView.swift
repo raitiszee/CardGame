@@ -21,13 +21,24 @@ struct ContentView: View {
             .foregroundColor(.orange)
             
             HStack {
-                Button("Add Card") {
-                    cardCount += 1
-                }
+                    Button(action: {
+                        cardCount -= 1
+                    }, label: {
+                        Image (systemName: "rectangle.stack.badge.minus.fill")
+                    })
+                    .imageScale(/*@START_MENU_TOKEN@*/.medium/*@END_MENU_TOKEN@*/)
+                    .font(.largeTitle)
+            
                 Spacer()
-                Button("Remove Card") {
-                    cardCount -= 1
-                }
+                
+                    Button(action: {
+                        cardCount += 1
+                    }, label: {
+                        Image (systemName: "rectangle.stack.badge.plus.fill")
+                    })
+                    .imageScale(/*@START_MENU_TOKEN@*/.medium/*@END_MENU_TOKEN@*/)
+                    .font(.largeTitle)
+                
             }
             
         }
